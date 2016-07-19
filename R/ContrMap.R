@@ -17,6 +17,10 @@ raster::writeRaster
 raster::raster
 raster::setValues
 raster::as.matrix
+raster::xmin
+raster::xmax
+raster::ymin
+raster::ymax
 }
 
 
@@ -103,15 +107,13 @@ pos<-which(data ==list[z], arr.ind = T)
 d<-dim(pos)
 if(d[1]>0){
 time(t=z, from=1, to=n, c31=paste(z, "of", n), c41=list[z]) 
-
 nombre<-paste(list[z], ".ASC" , sep = "")
 r2<- raster(nombre)
-
-if(round(xmin(r2))==-180 & round(ymin(r2))==-90 & round(xmax(r2))==180 & round(ymax(r2))==90){
+if(round(raster::xmin(r2))==-180 & round(raster::ymin(r2))==-90 & round(raster::xmax(r2))==180 & round(raster::ymax(r2))==90){
 rr<-r2
 }
 else{
-rr<-merge(r2,t1)
+rr<-raster::merge(r2,t1)
 }
 
 m1<-raster::as.matrix(rr)

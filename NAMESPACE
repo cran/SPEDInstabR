@@ -9,7 +9,7 @@ importFrom(graphics, par, mtext, legend, text, boxplot, image, plot, axis, rect,
 
 importFrom(grDevices, terrain.colors, jpeg, dev.off, dev.new)
 
-importFrom(raster, raster, writeRaster, setValues, res, resample, xmin, ymin, xmax, ymax)
+importFrom(raster, raster, merge, writeRaster, setValues, res, resample, xmin, ymin, xmax, ymax, as.matrix)
 
 importFrom(plotrix, color.legend)
 
