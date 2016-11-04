@@ -57,7 +57,7 @@ Guisande, C., Manjarrés-Hernández, A., Pelayo-Villamil, P., Granado-Lorencio, C.
 
 Kampstra, P (2008). Beanplot: A Boxplot Alternative for Visual Comparison of Distributions. \emph{Journal of Statistical Software, Code Snippets}, 28: 1-9.
 
-Kampstra, P (2015) Visualization via Beanplots (like Boxplot/Stripchart/Violin Plot). R package version 1.2. Available at: \url{http://CRAN.R-project.org/package=beanplot}.
+Kampstra, P (2015) Visualization via Beanplots (like Boxplot/Stripchart/Violin Plot). R package version 1.2. Available at: \url{https://CRAN.R-project.org/package=beanplot}.
 
 Pelayo-Villamil, P., Guisande, C., Vari, R.P., Manjarrés-Hernández, A., García-Roselló, E., González-Dacosta, J. et al. (2015) Global diversity patterns of freshwater fishes - potential victims of their own success. \emph{Diversity and Distributions}, 21, 345-356.
 }

@@ -22,7 +22,7 @@ ContrMap(data, vars, Species, Level=NULL, Taxon=NULL, jpg=FALSE)
 The raster file is created using the functions \link[raster]{raster}, \link[raster]{writeRaster} and \link[raster]{setValues} of the package raster (Hijmans et al., 2015).
 }
 \references{
-Hijmans, R.J., Etten, J. van, Cheng, J., Mattiuzzi, M., Sumner, M., Greenberg, J.A., Lamigueiro, O.P., Bevan, A., Racine, E.B., Shortridge, A., (2015) Geographic Data Analysis and Modeling. R package version 2.5-8. Available at: \url{http://CRAN.R-project.org/package=raster}.
+Hijmans, R.J., Etten, J. van, Cheng, J., Mattiuzzi, M., Sumner, M., Greenberg, J.A., Lamigueiro, O.P., Bevan, A., Racine, E.B., Shortridge, A., (2015) Geographic Data Analysis and Modeling. R package version 2.5-8. Available at: \url{https://CRAN.R-project.org/package=raster}.
 
 }
 \keyword{ContrMap}

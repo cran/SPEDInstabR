@@ -11,19 +11,6 @@ stop("There are no ASC files in the folder")
 }
 
 
-####Packages
-if(requireNamespace("raster", quietly = TRUE)){
-raster::writeRaster
-raster::raster
-raster::setValues
-raster::as.matrix
-raster::xmin
-raster::xmax
-raster::ymin
-raster::ymax
-}
-
-
 ####Selection of variables
 
 if(!is.null(Level)){data<-subset(data,data[,Level] %in% Taxon)}
@@ -83,11 +70,11 @@ list<-sapply(strsplit(list, split='.', fixed=TRUE), function(x) (x[1]))
 ####Dimension of the raster
 
 nombre<-paste(list[1], ".ASC" , sep = "")
-r1<- raster(nombre)
+r1<- raster::raster(nombre)
 
-reso<-res(r1)
+reso<-raster::res(r1)
 
-t1<-raster(xmn=-180, xmx=180, ymn=-90, ymx=90, resolution=reso)
+t1<-raster::raster(xmn=-180, xmx=180, ymn=-90, ymx=90, resolution=reso)
 
 dimm<-dim(t1)
 
@@ -108,7 +95,7 @@ d<-dim(pos)
 if(d[1]>0){
 time(t=z, from=1, to=n, c31=paste(z, "of", n), c41=list[z]) 
 nombre<-paste(list[z], ".ASC" , sep = "")
-r2<- raster(nombre)
+r2<- raster::raster(nombre)
 if(round(raster::xmin(r2))==-180 & round(raster::ymin(r2))==-90 & round(raster::xmax(r2))==180 & round(raster::ymax(r2))==90){
 rr<-r2
 }
@@ -133,7 +120,7 @@ m1[which(m1==valor)]<-1
 }
 
 ####Save the rasters
-r<-raster(nrow=dimm[1], ncol=dimm[2])
+r<-raster::raster(nrow=dimm[1], ncol=dimm[2])
 
 for(j in 1:h){
 
@@ -141,9 +128,9 @@ matrizfinal<-contar1[,,j]/contar
 matrizfinal[is.na(matrizfinal)]<-(-9999)
 matrizfinal[is.infinite(matrizfinal)]<-(-9999)
 
-rr<-setValues(r, matrizfinal)
+rr<-raster::setValues(r, matrizfinal)
 name<-paste(vars[j],".ASC", sep="")
-writeRaster(rr, name,  NAflag= -9999, overwrite=TRUE) 
+raster::writeRaster(rr, name,  NAflag= -9999, overwrite=TRUE) 
 
 ####Printing the maps
 

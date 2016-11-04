@@ -3,17 +3,9 @@
 
 exportPattern(ContrMap, ContrBB, Rmap, PreExt)
 
-importFrom(beanplot, beanplot)
-
 importFrom(graphics, par, mtext, legend, text, boxplot, image, plot, axis, rect, polygon, points)
 
 importFrom(grDevices, terrain.colors, jpeg, dev.off, dev.new)
-
-importFrom(raster, raster, merge, writeRaster, setValues, res, resample, xmin, ymin, xmax, ymax, as.matrix)
-
-importFrom(plotrix, color.legend)
-
-importFrom(TeachingDemos, squishplot)
 
 importFrom(stats, na.exclude, sd)
 

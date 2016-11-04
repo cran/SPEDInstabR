@@ -3,10 +3,6 @@ what=c(1,1,1,1), ll=NULL, border="black", OrderCat=NULL, LabelCat=NULL, XLAB="Va
 YLAB="Percentage of contribution to instability index", COLOR=NULL, LEGEND=NULL, MTEXT= NULL, TEXT=NULL,
 ResetPAR=TRUE, PAR=NULL, BEANPLOT=NULL, BOXPLOT=NULL){
 
-
-####Pacakages
-if(requireNamespace("beanplot", quietly = TRUE)){beanplot::beanplot}
-
 ####Selection of variables
 
 datos<-data
@@ -104,11 +100,11 @@ if(!is.null(LabelCat)) dat[,1]<-factor(dat[,1], levels = unique(dat[,1]), labels
 if(graph=="beanplot"){
 ####Beanplot
 if(!is.null(BEANPLOT)){
-beanplotexe<-paste("beanplot(","dat[,2]~dat[,1],",toString(x=BEANPLOT), ")")
+beanplotexe<-paste("beanplot::beanplot(","dat[,2]~dat[,1],",toString(x=BEANPLOT), ")")
 eval(parse(text=beanplotexe))
 }
 else{
-beanplotexe<-paste("beanplot(","dat[,2]~dat[,1],",
+beanplotexe<-paste("beanplot::beanplot(","dat[,2]~dat[,1],",
 "xlab=XLAB,", "ylab=YLAB,","side=side,", "beanlines=beanlines,",
 "what=what,", "border=border,","col=color1,", "ll=ll", ")")
 eval(parse(text=beanplotexe))

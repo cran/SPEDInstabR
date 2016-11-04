@@ -11,7 +11,7 @@ Rmap<-function(data, Area="World", minLon, maxLon, minLat, maxLat,
 
 if(class(data)=="RasterLayer"){
 
-if(round(xmin(data))==-180 & round(ymin(data))==-90 & round(xmax(data))==180 & round(ymax(data))==90){
+if(round(raster::xmin(data))==-180 & round(raster::ymin(data))==-90 & round(raster::xmax(data))==180 & round(raster::ymax(data))==90){
 m1<-raster::as.matrix(data)
 dimm<-dim(m1)
 long<-seq(from=(-180+360/dimm[2]), to = 180 , by = 360/dimm[2])
@@ -23,19 +23,19 @@ data<-cbind(lat,m1, deparse.level=0)
 }
 else{
 
-reso<-res(data)
+reso<-raster::res(data)
 
-r1<-raster(xmn=-180, xmx=180, ymn=-90, ymx=90, resolution=reso)
+r1<-raster::raster(xmn=-180, xmx=180, ymn=-90, ymx=90, resolution=reso)
 
-data<-resample(data,r1)
+data<-raster::resample(data,r1)
 
 m1<-raster::as.matrix(data)
 dimm<-dim(m1)
 
-long<-seq(from=(xmin(data)+(xmax(data)-xmin(data))/dimm[2]), to = xmax(data) , by = (xmax(data)-xmin(data))/dimm[2])
+long<-seq(from=(raster::xmin(data)+(raster::xmax(data)-raster::xmin(data))/dimm[2]), to = raster::xmax(data) , by = (raster::xmax(data)-raster::xmin(data))/dimm[2])
 m1<-rbind(long,m1)
 
-lat<-seq(from=(ymax(data)+(ymin(data)-ymax(data))/dimm[1]), to = ymin(data) , by = (ymin(data)-ymax(data))/dimm[1])
+lat<-seq(from=(raster::ymax(data)+(raster::ymin(data)-raster::ymax(data))/dimm[1]), to = raster::ymin(data) , by = (raster::ymin(data)-raster::ymax(data))/dimm[1])
 lat<-c(0,lat)
 data<-cbind(lat,m1, deparse.level=0)
 
@@ -43,13 +43,6 @@ data<-cbind(lat,m1, deparse.level=0)
 
 }
 
-if(requireNamespace("plotrix", quietly = TRUE)){
-plotrix::color.legend
-}
-
-if(requireNamespace("TeachingDemos", quietly = TRUE)){
-TeachingDemos::squishplot
-}
 
 
 #####Checking data required
@@ -391,7 +384,7 @@ lensequ<-length(sequ)
 sequ[lensequ]<-codlegend
 }
 
-color.legend(xl=x1, yb=minLat, xr= x2,
+plotrix::color.legend(xl=x1, yb=minLat, xr= x2,
 yt=maxLat, sequ, gradient="y", align="rb", cex=cex.legend, rect.col=colscale[-1])
 }
 else{
@@ -423,7 +416,7 @@ lensequ<-length(sequ)
 sequ[lensequ]<-codlegend
 }
 
-color.legend(xl=minLon, yb=y1, xr=maxLon, yt=y2, sequ,
+plotrix::color.legend(xl=minLon, yb=y1, xr=maxLon, yt=y2, sequ,
 gradient="x", align="lt", cex=cex.legend, rect.col=colscale[-1])
 }
 
