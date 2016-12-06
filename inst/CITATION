@@ -1,0 +1,17 @@
+citHeader("To cite SPEDInstabR in publications please use:")
+
+citEntry(entry = "Article",
+  title        = "SPEDInstabR: An algorithm based on a fluctuation index for selecting predictors in species distribution modeling",
+  author       = "Guisande, C., García-Roselló, E., Heine, J., González-Dacosta, J., Gozález Vilas, L., García Pérez, B.J. & Lobo, J.M.",
+  journal      = "Ecological Informatics",
+  year         = "2016",
+  volume       = "37",
+    pages        = "18--23",
+  url          = "www.sciencedirect.com/science/article/pii/S1574954116301303",
+
+  textVersion  =
+  paste("Guisande, C., García-Roselló, E., Heine, J., González-Dacosta, J., Gozález Vilas, L., García Pérez, B.J. & Lobo, J.M. (2016).",
+        "SPEDInstabR: An algorithm based on a fluctuation index for selecting predictors in species distribution modeling.",
+        "Ecological Informatics, 37: 18-23.",
+        "URL www.sciencedirect.com/science/article/pii/S1574954116301303")
+)
