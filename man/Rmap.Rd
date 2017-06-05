@@ -87,8 +87,8 @@ main= "Percentage of contribution of vegetation index")
 
 #Example 2. Only to be used with RWizard and the map is exported to a jpg
 
-@_Build_AdWorld_
 data(VI)
+@_Build_AdWorld_
 Rmap(data = VI , Area = c("Argentina", "Bolivia", "Brazil", "Chile", "Colombia",
 "Ecuador", "French Guiana", "Guyana", "Paraguay", "Peru", "Suriname",
 "Uruguay", "Venezuela","Panama","Nicaragua","Costa Rica"),
