@@ -48,8 +48,8 @@ The plot is performed with the function \link[graphics]{plot.default} of base gr
 
 In the example, it was estimated the instability index for several species of the orders Amiiformes and Perciformes (Guisande et al., 2010; Pelayo-Villamil et al., 2015). It is shown the percentiles of the variable altitude for presence and the extent.
 \tabular{c}{
-\figure{F3}{options: width=3.5in}
-}
+\if{html}{\figure{F3.jpg}{options: width=3.5in}}
+\if{latex}{\figure{F3.jpg}{options: width=3.5in}}}
 }
 \references{
 García-Roselló, E., Guisande, C., González-Dacosta, J., Heine, J., Pelayo-Villamil, P., Manjarrés-Hernández, A., Vaamonde, A. & Granado-Lorencio, C. (2013) ModestR: a software tool for managing and analyzing species distribution map databases. \emph{Ecography}, 36, 1202-1207.

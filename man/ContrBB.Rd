@@ -47,8 +47,8 @@ The beanplot is performed with the function \link[beanplot]{beanplot} of the bea
 
 In the example, it was estimated the relative contribution of some factors on the distribution of some freshwater species (Guisande et al., 2010; Pelayo-Villamil et al., 2015).
 \tabular{c}{
-\figure{F1}{options: width=5.5in}
-}
+\if{html}{\figure{F1.jpg}{options: width=5.5in}}
+\if{latex}{\figure{F1.jpg}{options: width=5.5in}}}
 }
 \references{
 García-Roselló, E., Guisande, C., González-Dacosta, J., Heine, J., Pelayo-Villamil, P., Manjarrés-Hernández, A., Vaamonde, A. & Granado-Lorencio, C. (2013) ModestR: a software tool for managing and analyzing species distribution map databases. \emph{Ecography}, 36, 1202-1207.

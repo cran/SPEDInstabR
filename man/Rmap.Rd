@@ -63,7 +63,8 @@ The function \link[plotrix]{color.legend} of the package plotrix (Lemon et al., 
 
 \strong{Example 1.} An ESRI ASCII raster file obtained with the function \link{ContrMap} is used to obtain the map displayed below, which is the mean contribution to explain species distribution of some freshwater fish species, in cells of 1 degree, of the variable vegetation index.
 \tabular{c}{
-\figure{F2}{options: width=5.5in}
+\if{html}{\figure{F2.jpg}{options: width=5.5in}}
+\if{latex}{\figure{F2.jpg}{options: width=5.5in}}
 }
 }
 \value{A map is obtained.}
