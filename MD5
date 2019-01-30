@@ -1,4 +1,4 @@
-c3b4b9ec178147153db2d572256e44ce *DESCRIPTION
+fdee1a6fcd602d0170bb51778af8f9b8 *DESCRIPTION
 700e61c03b8cf213f52cf8ce4caad0ef *NAMESPACE
 eeaf4febf756685685a4c79733f69577 *R/ContrBB.R
 1c9bcda0405fe50ed2bd72ee0d5bbe19 *R/ContrMap.R
@@ -7,7 +7,7 @@ eeaf4febf756685685a4c79733f69577 *R/ContrBB.R
 918df78f96bad6c451b30a7e34a2ff17 *data/FishFC.RData
 1a597a42f81a278fdb168713667098fe *data/Instability.RData
 1f0a52b33ee6a011769829b4bbf41f19 *data/VI.RData
-83ef7d041c5650bac89cba79359f3434 *data/adworld.RData
+327d4b377f3a0edd1981eb3352d709a7 *data/adworld.RData
 6ea7f6a89c0a2b57723ab0ab405d150e *data/datalist
 40f809ff898227f7e27afc2ecfc0c5d5 *inst/CITATION
 97238e4f1213ddf6085462652309a8b3 *man/ContrBB.Rd
