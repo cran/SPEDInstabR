@@ -14,7 +14,7 @@ log=c(0,0), ndigits=0, ini=NULL, end=NULL, jpg=FALSE, filejpg="Map.jpg")
 }
 \arguments{
   \item{data}{A matrix (see details section) or an ESRI ASCII raster file with the environmental variable, data of richness, etc.}
-  \item{Area}{Only if using RWizard (\url{http://www.ipez.es/RWizard}). A character with the name of the administrative area or a vector with several administrative areas (countries, regions, etc.) or river basins. If it is "World" (default) the entire world is plotted. For using administrative areas or river basins, in addition to use RWizard, it is also necessary to replace data(world) by @_Build_AdWorld_ (see example 2).}
+  \item{Area}{Only if using RWizard. A character with the name of the administrative area or a vector with several administrative areas (countries, regions, etc.) or river basins. If it is "World" (default) the entire world is plotted. For using administrative areas or river basins, in addition to use RWizard, it is also necessary to replace data(world) by @_Build_AdWorld_ (see example 2).}
   \item{minLon, maxLon}{Optionally it is possible to define the minimum and maximum longitude.}
   \item{minLat, maxLat}{Optionally it is possible to define the minimum and maximum latitude.}
   \item{colbg}{Background color of the map (in some cases this is the sea).}
@@ -53,7 +53,7 @@ log=c(0,0), ndigits=0, ini=NULL, end=NULL, jpg=FALSE, filejpg="Map.jpg")
   \item{filejpg}{Name of the jpg file.}
 }
 \details{
-The matrix required in the argument \emph{data} may be obtained using ModestR, which is available at the web site \url{http://www.ipez.es/ModestR}: Export/Export checked maps/To RWizard Applications/To MapsR. It is also possible to use an ESRI ASCII raster file obtained with the function \link{ContrMap} or with any other software.
+The matrix required in the argument \emph{data} may be obtained using ModestR: Export/Export checked maps/To RWizard Applications/To MapsR. It is also possible to use an ESRI ASCII raster file obtained with the function \link{ContrMap} or with any other software.
 
 \strong{FUNCTIONS}
 
@@ -63,7 +63,7 @@ The function \link[plotrix]{color.legend} of the package plotrix (Lemon et al., 
 
 \strong{Example 1.} An ESRI ASCII raster file obtained with the function \link{ContrMap} is used to obtain the map displayed below, which is the mean contribution to explain species distribution of some freshwater fish species, in cells of 1 degree, of the variable vegetation index.
 \tabular{c}{
-\if{html}{\figure{F2.jpg}{options: width=5.5in}}
+\if{html}{\figure{F2.jpg}{options: width="50"}}
 \if{latex}{\figure{F2.jpg}{options: width=5.5in}}
 }
 }

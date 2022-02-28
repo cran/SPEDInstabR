@@ -10,7 +10,7 @@ MAIN=NULL, COLOR=c("#00FF0032","#FF000032"), XLIM=NULL, YLIM=NULL, TYPE="l",
 LTY=c(1,2), PCH=NULL, LEGEND=NULL, AXIS=NULL, MTEXT= NULL, TEXT=NULL)
 }
 \arguments{
-  \item{data}{Data file, which it may be obtained using DataManager of ModestR \url{http://www.ipez.es/ModestR}. See details section for the explanation of the format of the data.}
+  \item{data}{Data file, which it may be obtained using DataManager of ModestR. See details section for the explanation of the format of the data.}
   \item{var}{Variable with the names of the factors.}
   \item{envar}{Factor.}
   \item{Interval}{Variable with the intervals.}
@@ -38,7 +38,7 @@ LTY=c(1,2), PCH=NULL, LEGEND=NULL, AXIS=NULL, MTEXT= NULL, TEXT=NULL)
 }
 \value{A plot is obtained.}  
 \details{
-The CSV file required in the argument \emph{data} has the following format: class, order, family, genus and species, along with the frequencies for presence and for the extent. This file may be obtained using ModestR (García-Roselló et al., 2013; available at the web site \url{http://www.ipez.es/ModestR} using the following menu: Export checked maps/To RWizard Applications/To SPEDInstab. The default name of this file obtained from ModestR is "Instability.CSV".
+The CSV file required in the argument \emph{data} has the following format: class, order, family, genus and species, along with the frequencies for presence and for the extent. This file may be obtained using ModestR (García-Roselló et al., 2013; available at the web site using the following menu: Export checked maps/To RWizard Applications/To SPEDInstab. The default name of this file obtained from ModestR is "Instability.CSV".
 
 \strong{FUNCTIONS}
 
@@ -48,7 +48,7 @@ The plot is performed with the function \link[graphics]{plot.default} of base gr
 
 In the example, it was estimated the instability index for several species of the orders Amiiformes and Perciformes (Guisande et al., 2010; Pelayo-Villamil et al., 2015). It is shown the percentiles of the variable altitude for presence and the extent.
 \tabular{c}{
-\if{html}{\figure{F3.jpg}{options: width=3.5in}}
+\if{html}{\figure{F3.jpg}{options: width="50"}}
 \if{latex}{\figure{F3.jpg}{options: width=3.5in}}}
 }
 \references{

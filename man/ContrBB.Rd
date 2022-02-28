@@ -11,7 +11,7 @@ COLOR=NULL, LEGEND=NULL, MTEXT= NULL, TEXT=NULL, ResetPAR=TRUE, PAR=NULL,
 BEANPLOT=NULL, BOXPLOT=NULL)
 }
 \arguments{
-  \item{data}{Data file, which it may be obtained using DataManager of ModestR \url{http://www.ipez.es/ModestR}. See details section for the explanation of the format of the data.}
+  \item{data}{Data file, which it may be obtained using DataManager of ModestR. See details section for the explanation of the format of the data.}
   \item{vars}{Environmental factors.}
   \item{Level}{Optionaly, a taxonomic level may be selected, i.e., class, family, order, genus or species.}
   \item{Taxon}{Optionally, it is possible to work only with a selected species, just specifying the name of the taxon or taxa selected within the taxonomic level selected in the argument \emph{Level}, i.e., name of the order, family, etc. Can be a vector, so several taxa.}
@@ -37,7 +37,7 @@ BEANPLOT=NULL, BOXPLOT=NULL)
 }
 \value{A beanplot or boxplot is obtained.}  
 \details{
-The CSV file required in the argument \emph{data} has the following format: class, order, family, genus and species, along with the contribution of the environmental variables. This file may be obtained using ModestR (García-Roselló et al., 2013; available at the web site \url{http://www.ipez.es/ModestR} using the following menu: Export/Export checked maps/To RWizard Applications/To SPEDInstab. The default name of this file obtained from ModestR is "Contribution.CSV".
+The CSV file required in the argument \emph{data} has the following format: class, order, family, genus and species, along with the contribution of the environmental variables. This file may be obtained using ModestR (García-Roselló et al., 2013; available at the web site using the following menu: Export/Export checked maps/To RWizard Applications/To SPEDInstab. The default name of this file obtained from ModestR is "Contribution.CSV".
 
 \strong{FUNCTIONS}
 
@@ -47,7 +47,7 @@ The beanplot is performed with the function \link[beanplot]{beanplot} of the bea
 
 In the example, it was estimated the relative contribution of some factors on the distribution of some freshwater species (Guisande et al., 2010; Pelayo-Villamil et al., 2015).
 \tabular{c}{
-\if{html}{\figure{F1.jpg}{options: width=5.5in}}
+\if{html}{\figure{F1.jpg}{options: width="50"}}
 \if{latex}{\figure{F1.jpg}{options: width=5.5in}}}
 }
 \references{

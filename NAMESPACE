@@ -10,7 +10,3 @@ importFrom(grDevices, terrain.colors, jpeg, dev.off, dev.new)
 importFrom(stats, na.exclude, sd)
 
 importFrom(utils, write.table)
-
-
-
-

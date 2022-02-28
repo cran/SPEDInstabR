@@ -10,7 +10,7 @@ Rmap<-function(data, Area="World", minLon, maxLon, minLat, maxLat,
   ndigits=0, ini=NULL, end=NULL, jpg=FALSE, filejpg="Map.jpg"){
 
 
-if(class(data)=="RasterLayer"){
+if(inherits(data, "RasterLayer")){
 
 if(round(raster::xmin(data))==-180 & round(raster::ymin(data))==-90 & round(raster::xmax(data))==180 & round(raster::ymax(data))==90){
 m1<-raster::as.matrix(data)
