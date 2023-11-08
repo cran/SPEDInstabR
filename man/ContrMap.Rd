@@ -14,7 +14,7 @@ ContrMap(data, vars, Species, Level=NULL, Taxon=NULL, jpg=FALSE)
   \item{Taxon}{Optionally, it is possible to work only with a selected species, just specifying the name of the taxon or taxa selected within the taxonomic level selected in the argument \emph{Level}, i.e., name of the order, family, etc. Can be a vector, so several taxa.}
   \item{jpg}{If TRUE the plots are exported to jpg files instead of using the windows device.}
 }
-\value{ESRI ASCII raster files are obtained for each factor selected in the argument \emph{vars}. Each raster cell is the mean relative contribution of the factor considering all species present in the cell. This raster map be displayed with MapMaker of ModestR (García-Roselló et al., 2013), the function \link{Rmap} or any GIS software.}  
+\value{ESRI ASCII raster files are obtained for each factor selected in the argument \emph{vars}. Each raster cell is the mean relative contribution of the factor considering all species present in the cell. This raster map be displayed with MapMaker of ModestR (Garcia-Rosello et al., 2013), the function \link{Rmap} or any GIS software.}  
 \details{
 
 \strong{FUNCTIONS}

@@ -59,7 +59,7 @@ ZZ[2,2]<-""
 }
 write.table(ZZ,"Inf.txt", row.names=FALSE,col.names=FALSE)
 }
-##########End function función time
+##########End time
 
 
 

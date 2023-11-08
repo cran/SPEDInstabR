@@ -38,7 +38,7 @@ LTY=c(1,2), PCH=NULL, LEGEND=NULL, AXIS=NULL, MTEXT= NULL, TEXT=NULL)
 }
 \value{A plot is obtained.}  
 \details{
-The CSV file required in the argument \emph{data} has the following format: class, order, family, genus and species, along with the frequencies for presence and for the extent. This file may be obtained using ModestR (García-Roselló et al., 2013; available at the web site using the following menu: Export checked maps/To RWizard Applications/To SPEDInstab. The default name of this file obtained from ModestR is "Instability.CSV".
+The CSV file required in the argument \emph{data} has the following format: class, order, family, genus and species, along with the frequencies for presence and for the extent. This file may be obtained using ModestR (Garcia-Rosello et al., 2013; available at the web site using the following menu: Export checked maps/To RWizard Applications/To SPEDInstab. The default name of this file obtained from ModestR is "Instability.CSV".
 
 \strong{FUNCTIONS}
 
@@ -52,11 +52,11 @@ In the example, it was estimated the instability index for several species of th
 \if{latex}{\figure{F3.jpg}{options: width=3.5in}}}
 }
 \references{
-García-Roselló, E., Guisande, C., González-Dacosta, J., Heine, J., Pelayo-Villamil, P., Manjarrés-Hernández, A., Vaamonde, A. & Granado-Lorencio, C. (2013) ModestR: a software tool for managing and analyzing species distribution map databases. \emph{Ecography}, 36, 1202-1207.
+Garcia-Rosello, E., Guisande, C., Gonzalez-Dacosta, J., Heine, J., Pelayo-Villamil, P., Manjarres-Hernandez, A., Vaamonde, A. & Granado-Lorencio, C. (2013) ModestR: a software tool for managing and analyzing species distribution map databases. \emph{Ecography}, 36, 1202-1207.
 
-Guisande, C., Manjarrés-Hernández, A., Pelayo-Villamil, P., Granado-Lorencio, C., Riveiro, I., Acuña, A., Prieto-Piraquive, E., Janeiro, E., Matías, J.M., Patti, C., Patti, B., Mazzola, S., Jiménez, S., Duque, V. & Salmerón, F. (2010) IPez: An expert system for the taxonomic identification of fishes based on machine learning techniques. \emph{Fisheries Research}, 102, 240-247.
+Guisande, C., Manjarres-Hernandez, A., Pelayo-Villamil, P., Granado-Lorencio, C., Riveiro, I., Acuña, A., Prieto-Piraquive, E., Janeiro, E., Matias, J.M., Patti, C., Patti, B., Mazzola, S., Jimenez, S., Duque, V. & Salmeron, F. (2010) IPez: An expert system for the taxonomic identification of fishes based on machine learning techniques. \emph{Fisheries Research}, 102, 240-247.
 
-Pelayo-Villamil, P., Guisande, C., Vari, R.P., Manjarrés-Hernández, A., García-Roselló, E., González-Dacosta, J. et al. (2015) Global diversity patterns of freshwater fishes - potential victims of their own success. \emph{Diversity and Distributions}, 21, 345-356.
+Pelayo-Villamil, P., Guisande, C., Vari, R.P., Manjarres-Hernandez, A., Garcia-Rosello, E., Gonzalez-Dacosta, J. et al. (2015) Global diversity patterns of freshwater fishes - potential victims of their own success. \emph{Diversity and Distributions}, 21, 345-356.
 }
 \examples{
 
