@@ -1,5 +1,5 @@
 Package: SPEDInstabR
-Version: 2.1
+Version: 2.2
 Title: Estimation of the Relative Importance of Factors Affecting
         Species Distribution Based on Stability Concept
 Author: Castor Guisande Gonzalez
@@ -8,8 +8,8 @@ Description: From output files obtained from the software 'ModestR', the relativ
 License: GPL (>= 2)
 Encoding: UTF-8
 Depends: R (>= 3.1.1)
-Suggests: beanplot, raster, plotrix, TeachingDemos
+Suggests: beanplot, raster, plotrix
 Repository: CRAN
 NeedsCompilation: no
-Packaged: 2023-11-06 20:24:13 UTC; castor
-Date/Publication: 2023-11-08 00:30:05 UTC
+Packaged: 2024-02-10 20:27:43 UTC; castor
+Date/Publication: 2024-02-10 20:50:02 UTC
